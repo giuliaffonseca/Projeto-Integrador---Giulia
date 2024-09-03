@@ -35,3 +35,21 @@ b.
 1. Código de Java: https://github.com/giuliaffonseca/Projeto-Integrador---Giulia.git
 2. Código Python: https://github.com/giuliaffonseca/Projeto-Integrador---Giulia.git
 3. Código C: https://github.com/giuliaffonseca/Projeto-Integrador---Giulia.git
+
+Atividade número 4
+a. 
+Frutas = ('Banana', 'Maçã', 'Uva', 'Morango')
+for Frutas in Frutas:
+    print (Frutas)
+    https://github.com/giuliaffonseca/Projeto-Integrador---Giulia/blob/main/giulia%201.PNG
+    
+b. 
+#Variável Nota
+nota = 10
+
+# Condição Para Verificar a Nota
+if nota >= 7:
+    print("Aprovado.")
+else:
+    print("Não aprovado.")
+https://github.com/giuliaffonseca/Projeto-Integrador---Giulia/blob/main/giulia%202.PNG 
