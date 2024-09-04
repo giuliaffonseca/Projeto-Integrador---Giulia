@@ -53,3 +53,45 @@ if nota >= 7:
 else:
     print("Não aprovado.")
 https://github.com/giuliaffonseca/Projeto-Integrador---Giulia/blob/main/giulia%202.PNG 
+
+Ativiidade número 05
+
+1. def bubble_sort(arr):
+    n = len(arr)
+    # Percorre toda a lista
+    for i in range(n):
+        # O último i elementos já estão na posição correta
+        for j in range(0, n - i - 1):
+            # Troca se o elemento encontrado for maior que o próximo elemento
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+    return arr
+
+# Exemplo de uso
+lista = [64, 34, 25, 12, 22, 11, 90]
+print("Lista original:", lista)
+lista_ordenada = bubble_sort(lista)
+print("Lista ordenada:", lista_ordenada)
+
+Lista original: [64, 34, 25, 12, 22, 11, 90]
+Lista ordenada: [11, 12, 22, 25, 34, 64, 90]
+
+[Execution complete with exit code 0]
+
+2. def extrair_vogais(frase):
+    # Definindo as vogais
+    vogais = 'aeiouAEIOU'
+    # Filtrando e juntando as vogais
+    resultado = ''.join([char for char in frase if char in vogais])
+    return resultado
+
+# Frase de exemplo
+frase = "Fluminense é o atual campeão da América"
+# Extraindo e imprimindo as vogais
+vogais = extrair_vogais(frase)
+print("Vogais na frase:", vogais)
+
+Vogais na frase: uieeoauaaeoaAia
+
+[Execution complete with exit code 0]
+
