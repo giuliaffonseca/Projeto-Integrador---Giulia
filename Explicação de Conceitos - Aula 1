@@ -95,3 +95,150 @@ Vogais na frase: uieeoauaaeoaAia
 
 [Execution complete with exit code 0]
 
+
+Atividade número 6.
+
+1. 
+def imprimir_informacoes(nome, idade, cidade):
+# Usa print com sep e end para formatar a saída
+print(f"Nome: {nome}", end=" - ")
+print(f"Idade: {idade}", end=" - ")
+print(f"Cidade: {cidade}!", end="\n")
+
+
+Nome: Giulia - Idade: 23 - Cidade: Rio de Janeiro!
+
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
+
+# Exemplo de chamada da função
+imprimir_informacoes("Giulia", 23, "Rio de Janeiro")
+
+2.
+def calculadora():
+    # Solicita ao usuário o primeiro número
+    num1 = float(input("Digite o primeiro número: "))
+    
+    # Solicita ao usuário o segundo número
+    num2 = float(input("Digite o segundo número: "))
+    
+    # Solicita ao usuário a operação desejada
+    operacao = input("Digite a operação desejada (+, -, *, /): ")
+    
+    # Calcula e imprime o resultado com base na operação escolhida
+    if operacao == '+':
+        resultado = num1 + num2
+    elif operacao == '-':
+        resultado = num1 - num2
+    elif operacao == '*':
+        resultado = num1 * num2
+    elif operacao == '/':
+        # Verifica se o segundo número é zero para evitar divisão por zero
+        if num2 == 0:
+            print("Erro: Divisão por zero não é permitida.")
+            return
+        resultado = num1 / num2
+    else:
+        print("Operação inválida. Use +, -, * ou /.")
+        return
+    
+    # Imprime o resultado
+    print(f"O resultado de {num1} {operacao} {num2} é: {resultado}")
+
+# Chama a função para executar
+calculadora()
+
+Digite o primeiro número: 
+155
+Digite o segundo número: 
+10
+Digite a operação desejada (+, -, *, /): 
+/
+O resultado de 155.0 / 10.0 é: 15.5
+
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
+3.
+def criar_lista_de_compras():
+    # Solicita ao usuário para digitar os itens separados por vírgula
+    entrada = input("Digite os itens da lista de compras: ")
+    
+    # Divide a entrada em uma lista de itens, removendo espaços extras
+    itens = [item.strip() for item in entrada.split(',')]
+    
+    # Imprime os itens com um índice
+    for i, item in enumerate(itens, start=1):
+        print(f"Item {i}: {item}")
+
+# Chama a função
+criar_lista_de_compras()
+
+Digite os itens da lista de compras: 
+uva, banana, kiwi, maçã
+Item 1: uva
+Item 2: banana
+Item 3: kiwi
+Item 4: maçã
+
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
+
+4. 
+Temperatura = int(input("Digite a temperatura: "))
+print("No Rio a temperatura é de", (26 * 9/5) + 32., "graus  Fahrenheit.")
+
+Digite a temperatura: 
+26
+No Rio a temperatura é de 78.8 graus  Fahrenheit.
+
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
+
+5.
+def coletar_nomes():
+    nomes = []  # Inicializa uma lista vazia para armazenar os nomes
+    
+    while True:  # Inicia um loop que vai continuar até ser interrompido
+        nome = input("Digite um nome (ou 'sair' para encerrar): ")  # Pede ao usuário para digitar um nome
+        
+        if nome.lower() == 'sair':  # Verifica se o usuário digitou 'sair'
+            break  # Sai do loop se o nome for 'sair'
+        
+        nomes.append(nome)  # Adiciona o nome à lista de nomes
+    
+    # Após sair do loop, imprime todos os nomes que foram digitados
+    print("Nomes digitados:")
+    for nome in nomes:  # Itera sobre a lista de nomes
+        print(nome)  # Imprime cada nome em uma nova linha
+
+# Chama a função para executar
+coletar_nomes()
+
+Digite um nome (ou 'sair' para encerrar): 
+Giulia
+Digite um nome (ou 'sair' para encerrar): 
+Anna
+Digite um nome (ou 'sair' para encerrar): 
+Bruna
+Digite um nome (ou 'sair' para encerrar): 
+Yan
+Digite um nome (ou 'sair' para encerrar): 
+Rafael
+Digite um nome (ou 'sair' para encerrar): 
+sair
+Nomes digitados:
+Giulia
+Anna
+Bruna
+Yan
+Rafael
+
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
+
+
